@@ -40,7 +40,7 @@ body {
   left: 50%; transform: translateX(-50%); top: 0;
 }
 .btnGetStarted{
-  width: '189.36px';
+  width: '189px';
   height: '64px';
   top: '20px';
   left: '20px';
@@ -55,4 +55,58 @@ body {
   font-size: '16px';
   background: linear-gradient(90deg, #FA75F8 0%, #9E6EE6 100%); /* Linear gradient */
   color: white; /* White text color */
+}
+
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.section {
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the container is 100% height for the canvas to fill */
+.canvas-element {
+  width: 100%;   /* Fill the full width of the parent */
+  height: 100%;  /* Fill the full height of the parent */
+  display: block; /* Remove any space below the canvas */
+}
+
+/* Optional: You can set a height for the parent section that contains the canvas */
+section.relative {
+  height: 400px; /* Adjust the height as per your design needs */
+  position: relative; /* To position other elements (like buttons or dots) */
+}
+
+/* If you want to add some basic styling to the canvas itself */
+canvas {
+  background-color: #333; /* Optional background color */
+}
+
+.custom-login-rounded{
+  border-radius: 20px; /* Adjust the radius as needed */
+  padding: 20px; /* Optional padding inside the section */
+}
+/* Add to your App.css or any other stylesheet */
+.form-control-custom {
+  background-color: #f12222; /* Light gray background */
+  color: white; /* White text */
+}
+.header-icon {
+  cursor: pointer;
 }
